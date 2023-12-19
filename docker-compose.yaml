@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ilkdenemecont:
+    image: php:8.1-apache
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www/html
+      
